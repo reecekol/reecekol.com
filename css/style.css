@@ -1,0 +1,103 @@
+
+body{
+background: url("/images/roughcloth.png")  0 0;
+}
+	
+header{
+padding-top: 30px;
+padding-left: 40px;
+margin-bottom: 20px;
+}
+
+p{
+line-height: 26px;
+}
+
+nav{
+clear: both;
+padding-bottom: 20px;
+float: right;
+}
+
+nav ul li{
+float: left;
+list-style: none;
+display: block;
+padding: 10px;
+}
+
+a:link,a:visited{
+color: #E22C29;
+font-weight: bold;
+}
+		
+a:hover{
+color: grey;
+}
+
+nav a{
+text-decoration: none;
+font-size: 25px;
+}
+	
+time{
+color: grey;
+padding-top: 10px;
+display: block;
+}
+	
+#heading{
+color: #E22C29;
+text-align: center;
+font-size: 50px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+ 
+#container {
+width: 960px;
+margin: 0 auto;
+}
+
+#post{
+padding-bottom: 20px;
+}
+	
+#subject{
+font-weight: bold;
+color: #E22C29;
+font-size: 25px;
+padding-bottom: 20px;
+}
+
+#date{
+color: grey;
+}
+	
+#forkme{
+position: absolute;
+top: 0px;
+right: 0px;
+}
+	
+#linkedin{
+padding-left: 25px;
+}	
+
+.clearfix{
+ clear: both;
+ before: ".";
+}
+		
+.subhead{
+margin-left: 392px;
+}
+
+.subhead a{
+color: grey;
+text-decoration: none;
+}
+	
+.subhead p{
+padding: 1px;
+margin: 0px;
+}
