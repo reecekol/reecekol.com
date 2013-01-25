@@ -26,11 +26,6 @@ display: block;
 padding: 10px;
 }
 
-a img{
-outline: 0;
-border: 0;
-} 	
-
 a:link,a:visited{
 color: #E22C29;
 font-weight: bold;
@@ -85,7 +80,10 @@ right: 0px;
 text-decoration:none;
 }
 
-
+a img{
+outline:0;
+border:0;
+} 	
 #linkedin{
 padding-left: 25px;
 }	
