@@ -50,7 +50,11 @@ color: grey;
 padding-top: 10px;
 display: block;
 }
-	
+
+pre{
+ color:#14C41A;
+ background-color:#000000;
+}
 #heading{
 color: #E22C29;
 text-align: center;
