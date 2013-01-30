@@ -31,6 +31,11 @@ outline: 0;
 border: 0;
 } 	
 
+.video{
+margin:0 auto;
+display:block;
+}
+
 a:link,a:visited{
 color: #E22C29;
 font-weight: bold;
