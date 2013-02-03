@@ -1,0 +1,51 @@
+---
+title: Loading Effect With Jquery
+layout: post
+---
+
+<h2>Loading Effect</h2>
+     <p>An animated gif generator is availible <a href="http://www.ajaxload.info/">here</a>.</p>
+<pre>
+
+    #container{
+	  padding-left:50px;
+	  padding-top:60px;
+	}
+	
+	button{
+	  margin-top:60px;
+	}
+	
+	#loader{
+	 display:none;
+	}
+   
+     $(document).ready(function()
+	  {
+	  
+	    $("button").click(function()
+		 {
+		   $(this).fadeOut(300);
+		   
+		   $("#loader").show();
+		   
+		   setTimeout(ShowPicture,6000);
+		   
+		 })
+		 
+
+         function ShowPicture()
+         {
+             $("#loader").html("&lt;img src='kittens.jpg' alt='kittens'/&gt;")      
+         }   		 
+	 });
+   
+ 
+     &lt;div id="container"&gt;
+  
+       &lt;div&gt; id="loader">&lt;img src="loader.gif" alt="loader"/>&lt;/div&gt;
+       &lt;button>Load&lt;/button&gt;
+  
+     &lt;/div&gt;
+  
+</pre>
