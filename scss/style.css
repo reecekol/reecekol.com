@@ -151,9 +151,8 @@ color:grey;
 
 color: #DCA3A3;
 
-I've used both GIT and Subversion and personally don't have a preference. I wanted do a little write up so I decided to make this post. This tutorial goes through the git command line but you can download the tortoise git gui client.
 }
 
-pre caption {
+pre .caption {
  color:#DB0F61;
 }
