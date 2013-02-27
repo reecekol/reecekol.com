@@ -1,0 +1,100 @@
+---
+layout: post
+title: Introduction to GIT
+---
+<h2>Introduction to GIT</h2>
+<p>I've used both GIT and Subversion and personally don't have a preference. I wanted do a little write up so I decided to make this post. This tutorial goes through the git command line but you can download the tortoise GIT GUI client.</p>
+
+<h2>Creating a repository </h2>
+<pre>
+
+     <span class='command'>mkdir</span> testrepo
+	 
+     <span class='command'>cd</span> testrepo
+	 
+     <span class='command'>git</span> init 
+	 
+</pre>
+
+<h2>Checkout a repository</h2>
+
+<pre>
+  
+     <span class='command'>git</span> clone path or <span class='command'>git</span> clone [urlname]
+  
+</pre>
+
+
+
+<h2>Check the status of a branch</h2>
+<pre>
+
+     <span class='command'>git</span> status	
+  
+</pre>
+ 
+<h2>Check the commit history of a branch</h2>
+<pre>
+
+     <span class='command'>git</span> log
+  
+</pre>
+
+
+<h2>Adding a Remote repository</h2>
+<pre>
+
+     <span class='command'>git</span> remote add origin [urlname]
+  
+</pre>
+
+ 
+ 
+
+<h2> Adding a file to your local repository</h2>
+<pre>
+
+     <span class='command'>touch</span> Readme.md
+	
+     <span class='command'>git</span> add Readme.md
+	
+     <span class='command'>git</span> commit -m "init"
+	
+</pre>
+ 
+
+
+
+<h2>Branching</h2>
+<pre>
+
+     <span class="caption">Master is the default branch</span>
+   
+     <span class='command'>git</span> branch testbranch
+	
+     <span class='command'>git</span> checkout testbranch
+  
+     <span class="caption">Switch back to master</span>
+   
+     <span class='command'>git</span> checkout master
+   
+     <span class="caption">Shorthand for the above </span>
+   
+     <span class='command'>git</span> checkout -b testbranch
+	
+</pre>
+
+
+<h2>Pushing to a remote branch </h2>
+<pre>
+
+     <span class='command'>git</span> push 
+   
+</pre>
+
+<h2>Merging</h2>
+<pre>
+
+     <span class='command'>git</span> merge nameofbranch
+ 
+</pre>
