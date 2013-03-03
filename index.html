@@ -2,6 +2,8 @@
 layout: default
 title: Posts
 ---
+
+<div class="left-col">
 <h1>Posts</h1>
 
  {% for post in site.posts %}
@@ -10,3 +12,12 @@ title: Posts
       <time>{{ post.date | date_to_string }}</time>
 	</div>
  {% endfor %}
+</div>
+
+<div class="right right-col">
+	   <h1>Projects</h1>
+	   <ul>
+	      <li><a href="https://github.com/reecekol/HTML5SiteStarter">HTLM5SiteStarter</a></li>
+		  <li><a href="https://github.com/reecekol/reecekol.com">My Blog</a></li>
+	   </ul>
+</div>
