@@ -1,0 +1,210 @@
+/*********************************
+* Kole Reece 
+* February 26th 2013
+*
+**********************************/
+
+@import "base.scss";
+
+body{
+background-color: $bodycolor;
+margin:0;
+padding:0;
+overflow:auto;
+}
+
+
+header{
+padding-top: 30px;
+padding-left: 40px;
+margin-bottom: 20px;
+}
+
+p{
+line-height: 26px;
+color:#444444;
+font:16px "proxima-nova";
+ a{
+    font-size:16px;
+  }
+}
+
+
+h1{
+text-transform:uppercase;
+font-family:HelveticaNeue;
+color:#444444;
+border-bottom:1px solid #CCCCCC;
+padding-bottom:10px;
+}
+
+h2{
+text-transform:uppercase;
+font-family:HelveticaNeue,Arial;
+}
+nav{
+clear: both;
+padding-bottom: 20px;
+float: right;
+}
+
+nav ul li{
+float: left;
+list-style: none;
+display: block;
+padding: 10px;
+}
+
+a img{
+outline: 0;
+border: 0;
+} 	
+
+.video{
+margin:0 auto;
+display:block;
+}
+
+a:link,a:visited{
+color: #E22C29;
+font-weight: bold;
+}
+		
+a:hover{
+color: grey;
+}
+
+nav a{
+text-decoration: none;
+font-size: 25px;
+}
+	
+time{
+color: grey;
+padding-top: 10px;
+display: block;
+}
+
+pre{
+ color:#14C41A;
+ background-color:#000000;
+ padding-top:20px;
+ padding-bottom:30px;
+}
+
+#heading{
+color: #E22C29;
+text-align: center;
+font-size: 50px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+ 
+#container {
+width: 700px;
+margin: 0 auto;
+background-color:#FFFFFF;
+padding:30px 40px;
+min-height:800px;
+-webkit-box-shadow: -2px 0px 14px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    -2px 0px 14px rgba(50, 50, 50, 0.75);
+box-shadow:         -2px 0px 14px rgba(50, 50, 50, 0.75);
+}
+
+#container a{
+ text-decoration:none;
+ font-family:Helvetica;
+ font-size:20px;
+}
+
+#post{
+padding-bottom: 20px;
+}
+
+
+.post{
+ padding:5px 0px;
+}
+
+#subject{
+font-weight: bold;
+color: #E22C29;
+font-size: 25px;
+padding-bottom: 20px;
+}
+
+#date{
+color: grey;
+}
+	
+#forkme{
+position: absolute;
+top: 0px;
+right: 0px;
+text-decoration:none;
+}
+
+
+#linkedin{
+padding-left: 25px;
+}	
+
+.clearfix{
+ clear: both;
+ before: ".";
+}
+		
+.subhead{
+margin-left: 392px;
+}
+
+.subhead a{
+color: grey;
+text-decoration: none;
+}
+	
+.subhead p{
+padding: 1px;
+margin: 0px;
+color:grey;
+}
+
+.command{
+
+color: #DCA3A3;
+
+}
+
+pre .caption {
+ color:#DB0F61;
+}
+
+.right-col{
+
+ float:right;
+ width:30%;
+ margin-right:40px;
+ 
+ ul{
+   list-style:none;
+   padding:10px;
+   marigin-left:10px;
+     li{
+      margin-bottom:10px;
+     }
+  }
+  
+
+}
+
+
+.left-col{
+ float:left;
+ width:60%px;
+}
+
+.media-sprites{
+  width:70px;
+  backrgound: 
+  url("images/mediasprite.jpg") 0 0 no-repeat;;
+  height:60px;
+}
