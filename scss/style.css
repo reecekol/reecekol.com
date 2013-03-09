@@ -14,24 +14,20 @@ body {
   padding: 0;
   overflow: auto; }
 
-header {
-  padding-top: 30px;
-  padding-left: 40px;
-  margin-bottom: 20px; }
-
 p {
-  line-height: 26px;
   color: #444444;
-  font: 16px "proxima-nova"; }
-  p a {
-    font-size: 16px; }
+  font: 16px "proxima-nova";
+  line-height: 26px; }
+
+#container p a {
+  font-size: 14px; }
 
 h1 {
   text-transform: uppercase;
   font-family: HelveticaNeue;
   color: #444444;
   border-bottom: 1px solid #cccccc;
-  padding-bottom: 10px; }
+  padding-bottom: 6px; }
 
 h2 {
   text-transform: uppercase;
@@ -160,7 +156,14 @@ pre .caption {
   float: left;
   width: 60%px; }
 
-.media-sprites {
-  width: 70px;
-  backrgound: url("images/mediasprite.jpg") 0 0 no-repeat;
-  height: 60px; }
+.share {
+  padding: 20px 0; }
+
+header {
+  display: block;
+  padding-bottom: 40px;
+  padding-top: 30px; }
+
+header span {
+  display: inline-block;
+  width: 90px; }

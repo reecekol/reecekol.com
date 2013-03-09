@@ -2,7 +2,7 @@
 <html>
 <head>
    <title>Reecekol</title>
-   <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+   <link rel="stylesheet" type="text/css" href="/scss/style.css"/>
    <meta charset="utf-8"/>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
@@ -10,10 +10,19 @@
    
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
   <div id="container">
-  <div class="media-sprites">
-  
-  </div>
+   
+     <header><span><a href="/index.html">Home</a></span><span><a href="https://twitter.com/reecekol">Twitter</a></span><span><a href="HTML5Resume/index.html">Resume</a></span></header>
+   
   <div id="forkme"><a href="https://github.com/reecekol"><img src="/images/forkme.png" alt="forkme"></a></div>
    <section class="clearfix">
      {{ content }}

@@ -1,0 +1,62 @@
+---
+layout: post
+title: JQuery Selectors
+---
+<h2>JQuery Selectors</h2>
+
+<p>
+Selectors are at the heart of JQuery and are part of what makes the library so powerful. John Resig designed JQuery so that developers could leverage their existing knowledge of CSS selectors to to maniupatlate the DOM.Here are a few common selectors.
+
+<h3> JQuery Generic Syntax</h3>
+
+<pre>
+
+  <div class="caption">A typical Jquery statement follows the syntax</div>
+
+  $("selector").method();
+ 
+  <div class="caption">//calls the focus method on the DOM element with and id of helloworld</div>
+  
+  $("#helloworld").focus();
+   
+</pre>
+
+
+<h3>Select an html Element</h3>
+
+<pre>
+
+  $(element).method();
+
+  $("p").css({)
+
+  $(element1 element2).method() // descendant selectors in the dom
+
+</pre>
+
+
+<h3>Select  </h3>
+
+<pre>
+
+$(element1 > elmenet2).method() // matches direct children of Element1
+
+</pre>
+
+<pre>
+
+$(*).method() //univiersal selector selects all elments
+
+</pre>
+
+<pre>
+$(elements)
+$(element.classname).method();  //Element with a class of classname
+
+</pre>
+
+<pre>
+$(element#idname).method();  //Element with a id  of idname
+
+$(element[attribute]).method();  //selects and element with and attributename of attribute
+</pre>
