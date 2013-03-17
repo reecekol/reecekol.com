@@ -5,58 +5,82 @@ title: JQuery Selectors
 <h2>JQuery Selectors</h2>
 
 <p>
-Selectors are at the heart of JQuery and are part of what makes the library so powerful. John Resig designed JQuery so that developers could leverage their existing knowledge of CSS selectors to to maniupatlate the DOM.Here are a few common selectors.
+Selectors are at the heart of JQuery and are part of what makes the library so powerful. John Resig designed JQuery so that developers could leverage their existing knowledge of CSS selectors to to manipulate the DOM.Here are a few common selectors.
 
 <h3> JQuery Generic Syntax</h3>
 
 <pre>
 
-  <div class="caption">A typical Jquery statement follows the syntax</div>
+  <div class="caption">  A typical JQuery statement follows the syntax</div>
 
   $("selector").method();
  
-  <div class="caption">//calls the focus method on the DOM element with and id of helloworld</div>
+  <div class="caption">  //calls the focus method on the DOM element with and id of helloworld</div>
   
   $("#helloworld").focus();
    
 </pre>
 
 
-<h3>Select an html Element</h3>
+<h3>Select an HTML Element or its Descendant</h3>
 
 <pre>
+   
+  
+  $("element").method();
 
-  $(element).method();
+  $("p").css("color","red")
 
-  $("p").css({)
-
-  $(element1 element2).method() // descendant selectors in the dom
+  <div class="caption">  // descendant selectors in the dom </div>
+  
+  $("element1 element2").method() 
 
 </pre>
 
 
-<h3>Select  </h3>
+<h3>Select a direct child element of element1 </h3>
 
 <pre>
 
-$(element1 > elmenet2).method() // matches direct children of Element1
+  <div class="caption">  // matches direct children of element1 </div>
+  
+  $("element1 > elmenet2").method() 
+
+  <div class="caption">  //selects paragraph elements that are direct children of the div element</div>
+  
+  $("div > p ").method()  
+  
+</pre>
+
+
+<h3>Universal Selector</h3>
+<pre>
+
+  <div class="caption">  //univiersal selector selects all elements</div>
+  
+  $("*").method() 
 
 </pre>
 
+<h3>Elements with specific ids and classes </h3>
+
 <pre>
 
-$(*).method() //univiersal selector selects all elments
+  <div class="caption">  //Element with a class of classname</div>
+  
+  $("element.classname").method();  
+
+  <div class="caption">  //Element with a id  of idname </div>
+  
+  $("element#idname").method(); 
 
 </pre>
 
+
+<h3>Select Elements with a particluar attribute </h3>
 <pre>
-$(elements)
-$(element.classname).method();  //Element with a class of classname
-
-</pre>
-
-<pre>
-$(element#idname).method();  //Element with a id  of idname
-
-$(element[attribute]).method();  //selects and element with and attributename of attribute
+     <div class="caption">  //selects and element with and attributename of attribute</div>
+	 
+    $("element[attribute]").method();  
+	
 </pre>
