@@ -16,7 +16,7 @@ body {
 
 p {
   color: #444444;
-  font: 16px "proxima-nova";
+  font: 16px;
   line-height: 26px; }
 
 #container p a {
@@ -26,7 +26,7 @@ h1 {
   text-transform: uppercase;
   font-family: HelveticaNeue;
   color: #444444;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #CCCCCC;
   padding-bottom: 6px; }
 
 h2 {
@@ -143,7 +143,7 @@ pre .caption {
 
 .right-col {
   float: right;
-  width: 30%;
+  width: 35%;
   margin-right: 40px; }
   .right-col ul {
     list-style: none;

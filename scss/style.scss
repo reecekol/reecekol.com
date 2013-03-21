@@ -17,7 +17,7 @@ overflow:auto;
 
 p{
 color:#444444;
-font:16px "proxima-nova";
+font:16px; 
 line-height:26px;
 }
 
@@ -178,8 +178,9 @@ pre .caption {
 .right-col{
 
  float:right;
- width:30%;
+ width:35%;
  margin-right:40px;
+
  
  ul{
    list-style:none;
