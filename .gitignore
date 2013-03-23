@@ -4,3 +4,4 @@ _site\
 *.pdf
 css
 /_posts/2013-02-22-Intro-to-Git
+.sass-cache
