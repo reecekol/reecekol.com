@@ -1,0 +1,204 @@
+<!doctype html>
+<html Lang="en">
+
+<head>
+
+   <title>Reecekol.com</title>
+   
+   <link rel="stylesheet" type="text/css" href="/scss/style.css"/>
+   
+   <meta  name="description" content="Thoughts on programming, sports and life"/>
+   
+   <meta charset="utf-8"/>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <meta property="og:title" content="Introduction to GIT"/>
+   <meta property="og:url" content="http://reecekol.com"/>
+   <meta property="og:image" content="images/beach.jpg"/>
+   
+   <meta content="Kole Reece" name="author">
+   <meta content="Interersting thoughts on programming and technology" name="description">
+   <meta content="kole reece blog " name="keywords">
+	 
+   <!-- While The heart remains hidden.The acts it insipres are there for everyone to see.-->
+   
+</head>
+<body>
+
+  <!--facebook-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="container">
+  
+  <!--Menu -->
+  
+     <header>
+	    <span><a href="/index.html">Home</a></span><span><a href="https://twitter.com/reecekol">Twitter</a></span><span><a href="http://www.reecekol.com/HTML5Resume/index.html">Resume</a></span>
+	</header>
+   
+  <div id="forkme"><a href="https://github.com/reecekol"><img src="/images/forkme.png" alt="forkme"></a></div>
+  
+   <section class="clearfix">
+     <h1>Introduction to GIT</h1>
+<p>I've used both GIT and Subversion and personally don't have a preference. I wanted do a little write up so I decided to make this post. This tutorial goes through the git command line but you can download the tortoise GIT GUI client.</p>
+
+<h3>Creating a repository </h3>
+<pre>
+
+     <span class='command'>mkdir</span> testrepo
+	 
+     <span class='command'>cd</span> testrepo
+	 
+     <span class='command'>git</span> init 
+	 
+</pre>
+
+<h3>Checkout a repository</h3>
+
+<pre>
+  
+     <span class='command'>git</span> clone path or <span class='command'>git</span> clone [urlname]
+  
+</pre>
+
+
+
+<h3>Check the status of a branch</h3>
+<pre>
+
+     <span class='command'>git</span> status	
+  
+</pre>
+ 
+<h3>Check the commit history of a branch</h3>
+<pre>
+
+     <span class='command'>git</span> log
+  
+</pre>
+
+
+<h3>Adding a Remote repository</h3>
+<pre>
+
+     <span class='command'>git</span> remote add origin [urlname]
+  
+</pre>
+
+ 
+ 
+
+<h3> Adding a file to your local repository</h3>
+<pre>
+
+     <span class='command'>touch</span> Readme.md
+	
+     <span class='command'>git</span> add Readme.md
+	
+     <span class='command'>git</span> commit -m "init"
+	
+</pre>
+ 
+
+
+
+<h3>Branching</h3>
+<pre>
+
+     <span class="caption">Master is the default branch</span>
+   
+     <span class='command'>git</span> branch testbranch
+	
+     <span class='command'>git</span> checkout testbranch
+  
+     <span class="caption">Switch back to master</span>
+   
+     <span class='command'>git</span> checkout master
+   
+     <span class="caption">Shorthand for the above </span>
+   
+     <span class='command'>git</span> checkout -b testbranch
+	
+</pre>
+
+
+<h3>Pushing to a remote branch </h3>
+<pre>
+
+     <span class='command'>git</span> push 
+   
+</pre>
+
+<h3>Merging</h3>
+<pre>
+
+     <span class='command'>git</span> merge nameofbranch
+ 
+</pre>
+
+<div class="share"> 
+   <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+ <div class="fb-like" data-href="http://www.reecekol.com/" data-send="true" data-width="450" data-show-faces="true"></div>  
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'reecekol'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+   </section>
+ 
+ </div>
+ <!-- Google Analytics-->
+ 
+ <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37613296-1']);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+  </script>
+  
+  <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+     var sc_project=8835170; 
+     var sc_invisible=1; 
+     var sc_security="ff61c010"; 
+     var scJsHost = (("https:" == document.location.protocol) ?
+     "https://secure." : "http://www.");
+     document.write("<sc"+"ript type='text/javascript' src='" +
+      scJsHost+"statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript><div class="statcounter"><a title="free hit counter" href="http://statcounter.com/free-hit-counter/" target="_blank"><img class="statcounter"
+   src="http://c.statcounter.com/8835170/0/ff61c010/1/" alt="free hit counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

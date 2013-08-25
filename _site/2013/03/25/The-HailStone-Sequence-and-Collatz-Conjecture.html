@@ -1,0 +1,228 @@
+<!doctype html>
+<html Lang="en">
+
+<head>
+
+   <title>Reecekol.com</title>
+   
+   <link rel="stylesheet" type="text/css" href="/scss/style.css"/>
+   
+   <meta  name="description" content="Thoughts on programming, sports and life"/>
+   
+   <meta charset="utf-8"/>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <meta property="og:title" content="The Hailstone Sequence"/>
+   <meta property="og:url" content="http://reecekol.com"/>
+   <meta property="og:image" content="images/beach.jpg"/>
+   
+   <meta content="Kole Reece" name="author">
+   <meta content="Interersting thoughts on programming and technology" name="description">
+   <meta content="kole reece blog " name="keywords">
+	 
+   <!-- While The heart remains hidden.The acts it insipres are there for everyone to see.-->
+   
+</head>
+<body>
+
+  <!--facebook-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="container">
+  
+  <!--Menu -->
+  
+     <header>
+	    <span><a href="/index.html">Home</a></span><span><a href="https://twitter.com/reecekol">Twitter</a></span><span><a href="http://www.reecekol.com/HTML5Resume/index.html">Resume</a></span>
+	</header>
+   
+  <div id="forkme"><a href="https://github.com/reecekol"><img src="/images/forkme.png" alt="forkme"></a></div>
+  
+   <section class="clearfix">
+     <h2> The Hailstone Sequence and Collatz Conjecture</h2>
+
+<p> I came across the Hailstone Sequence problem earlier this week and decided to code it up. To me this is particulary interesting becuase we can write programs to calculate a particular sequence say for instance n = 10 but we can never prove the correctness of the <a href="http://en.wikipedia.org/wiki/Collatz_conjecture">Collatz conjecture </a>.
+Even if we try a large number(which would probably take a significant amount of time). How many numbers have we not tried ? Well there is still infinitely more. This problem reminded me of some other mathematical mysteries. The  <a href="http://en.wikipedia.org/wiki/Poincar%C3%A9_conjecture">Poincare conjecture </a>  solved by Dr. Grigori Perelman and <a href="http://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem">Fermats Last Theoreom</a> solved by Dr. Andrew Wiles. If you have an hour to waste this is a good <a href="http://www.youtube.com/watch?v=7FnXgprKgSE">video</a> on the topic
+</p>
+
+<pre>
+
+
+  import java.io.BufferedReader;
+  import java.io.IOException;
+  import java.io.InputStreamReader;
+
+
+  public class HailStoneSequence {
+
+	public static void main(String args[])
+	{
+		
+		int n =ReadInput();
+		
+		
+		while(n!=1)
+		
+		{
+			if(checkForEven(n))
+			{
+				n =n/2;
+			}
+			else if(checkForOdd(n))
+			{	
+				n=(n*3)+1;
+			}
+			
+			System.out.println(n);
+		}
+	}
+	
+	
+	public static int ReadInput()
+	
+	{
+		 System.out.println("Enter Value");
+		 
+		InputStreamReader input =  new InputStreamReader(System.in);
+		BufferedReader reader = new BufferedReader(input);
+		
+		int  rin=0;
+		try {
+		  rin= Integer.parseInt(reader.readLine());
+		}
+		catch (IOException io)
+		{
+			System.out.println("Could not read value");
+		}
+		
+		
+		return rin;
+		
+		
+	}
+	
+	
+	public  static boolean checkForEven(int n)
+	{
+		if(n%2==0)
+		{
+			return true;
+		}
+		
+		return false;
+	}
+	
+	
+	public static  boolean checkForOdd(int n)
+	{
+		 if(n%2==1)
+		 {
+			 return true; 
+		 }
+		 
+		 return false;
+    }
+
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+<div class="share"> 
+   <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+ <div class="fb-like" data-href="http://www.reecekol.com/" data-send="true" data-width="450" data-show-faces="true"></div>  
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'reecekol'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+   </section>
+ 
+ </div>
+ <!-- Google Analytics-->
+ 
+ <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37613296-1']);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+  </script>
+  
+  <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+     var sc_project=8835170; 
+     var sc_invisible=1; 
+     var sc_security="ff61c010"; 
+     var scJsHost = (("https:" == document.location.protocol) ?
+     "https://secure." : "http://www.");
+     document.write("<sc"+"ript type='text/javascript' src='" +
+      scJsHost+"statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript><div class="statcounter"><a title="free hit counter" href="http://statcounter.com/free-hit-counter/" target="_blank"><img class="statcounter"
+   src="http://c.statcounter.com/8835170/0/ff61c010/1/" alt="free hit counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
